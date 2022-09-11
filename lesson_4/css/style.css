@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
+
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Larsseit";
+   src: url("../fonts/Larsseit-Regular.woff2") format("woff2"), url("../fonts/Larsseit-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/*Медиум и болд бесплатных шрифтов с кириллицей нету, нашли только 400*/
+
+
+body {
+   font-family: "Larsseit";
+}
+
+p {
+   color: darkkhaki;
+}
+p {
+   color: rgb(139, 54, 189);
+}
+.header-link {
+   color: rgb(255, 56, 228);
+   font-family: "Roboto";
+}
+.header-block h1 {
+   color: rgb(233, 105, 0);
+   font-family: "Lato";
+   font-weight: 900;
+}
+
+.body-item p {
+   color: rgb(255, 128, 10);
+}
+#second p {
+   color: rgb(217, 146, 250);
+}
+h2.main-title {
+   color: rgb(38, 255, 19);
+   font-family: "Lato";
+   font-weight: 700;
+}
+.main-text {
+   color: darkgreen;
+}
+.info-text {
+   color: brown;
+}
+.info-text.text {
+   color: rgb(2, 105, 165);
+}
+p.info-text {
+   color: rgb(1, 124, 62);
+}
+#angari {
+   color: rgb(182, 34, 157);
+}
+.main-info .info-title {
+   color: red;
+   font-family: "Lato";
+   font-weight: 700;
+}
+.main-tourist h2{
+   color: crimson;
+   font-family: "Lato";
+   font-weight: 700;
+}
+.footer-title {
+   color: rgb(61, 60, 60);
+}
