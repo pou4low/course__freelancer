@@ -1,0 +1,50 @@
+* {
+   color: #000;
+}
+span {
+   color: rgb(148, 167, 106);
+}
+
+/*-------------------HEADER---------------------*/
+
+.header-item > a {
+   color: rgb(155, 143, 143);
+}
+/*-------------------MAIN---------------------*/
+
+.main-title {
+   color: rgb(255, 0, 0);
+}
+.plant-title {
+   color: rgb(101, 150, 241);
+}
+.plant-title + p {
+   color: rgb(228, 171, 15);
+}
+a.plant-link {
+   color: rgb(223, 111, 111);
+}
+.redbook ~ h3{
+	color: rgb(255, 0, 0);
+}
+.redbook-protect * {
+   color: rgb(182, 60, 212);
+}
+.redbook-protect h3 {
+   color: rgb(184, 12, 12);
+}
+.flowers-title,
+.flowers-text {
+   color: rgb(51, 95, 0);
+}
+
+
+/*-------------------FOOTER---------------------*/
+
+.footer .footer-title {
+   color: rgb(82, 3, 114);
+}
+.footer-link {
+   color: rgb(184, 78, 8);
+}
+
