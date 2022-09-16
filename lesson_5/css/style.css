@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-Regular.woff2") format("woff2"), url("../fonts/Alegreya-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-Italic.woff2") format("woff2"), url("../fonts/Alegreya-Italic.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-Bold.woff2") format("woff2"), url("../fonts/Alegreya-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-BoldItalic.woff2") format("woff2"), url("../fonts/Alegreya-BoldItalic.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-Black.woff2") format("woff2"), url("../fonts/Alegreya-Black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Alegreya";
+	src: url("../fonts/Alegreya-BlackItalic.woff2") format("woff2"), url("../fonts/Alegreya-BlackItalic.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: italic;
+}
+
+body {
+   font-family: "Fira Sans", sans-serif;
+   color: #0c0c0c;
+}
+h2 {
+   font-size: 22px;
+   font-family: Alegreya, serif;
+   font-weight: 700;
+}
+span {
+   text-decoration: line-through;
+   color: rgb(212, 175, 23);
+}
+.header__title {
+   margin-bottom: 20px;
+}
+.title {
+   color: red;
+}
+.header__menu {
+   background-color: bisque;
+   width: 390px;
+   padding: 10px 20px 1px 20px;
+   text-align: center;
+   box-sizing: content-box;
+}
+.menu__item {
+   margin-bottom: 10px;
+}
+a.menu__link {
+   color: rgb(255, 0, 234);
+   font-family: Alegreya, serif;
+   font-weight: 400;
+   font-size: 20px;
+   font-style: italic;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   white-space: nowrap;
+}
+
+.header-page {
+   text-align: center;
+   margin-bottom: 40px;
+}
+.header-page__title {
+   font-family: Alegreya, serif;
+   font-size: 30px;
+   font-weight: 900;
+   margin-bottom: 20px;
+   line-height: 1.3;
+   text-shadow: 1px 3px 3px rgb(71, 91, 207);
+}
+.header-page__text {
+   font-weight: 500;
+   font-style: italic;
+}
+.page {
+   padding: 50px 0px;
+}
+.page__body img {
+   margin: 10px 0px;
+}
+.page__koala,
+.page__platypus,
+.page__kangaroo,
+.page__kuzu {
+   margin-bottom: 40px;
+}
+.koala-page__title {
+   text-transform: capitalize;
+}
+.koala-page__text {
+   margin-bottom: 10px;
+   text-align: right;
+}
+
+.page__platypus {
+   background-color: #000;
+   color: #fff;
+   padding: 20px 0px;
+}
+.platypus-page__title.title {
+   color: #fff;
+   text-transform: lowercase;
+   text-decoration: overline;
+   text-shadow: 5px 4px 5px rgb(255, 255, 255), 2px -5px 10px red;
+}
+.platypus-page__text {
+   text-indent: 10px;
+   margin-bottom: 10px;
+}
+
+.kangaroo-page__title {
+   word-spacing: 20px;
+   text-decoration: underline;
+}
+p.kangaroo-page__text {
+   margin-bottom: 10px;
+   text-align: justify;
+   color: #d756db;
+}
+
+.page__kuzu {
+   background-color: #000;
+   color: #fff;
+}
+.page__kuzu h2 {
+   color: rgb(186, 189, 25);
+}
+
+.kuzu-page__text {
+   font-weight: 700;
+   font-style: italic;
+   text-decoration: underline;
+}
+
+.page__frog .frog-page__text {
+   text-shadow: 5px 5px 10px #0c0c0c;
+}
+
+.footer__link {
+   font-size: 30px;
+   font-weight: 700;
+}
