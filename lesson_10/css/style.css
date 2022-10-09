@@ -1,0 +1,97 @@
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Lato";
+   src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+}
+
+body {
+   font-family: "Lato", sans-serif;
+   color: #424551;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+
+.page__main:not(:last-child) {
+   margin-bottom: 120px;
+}
+.main__header:not(:last-child) {
+   margin-bottom: 60px;
+}
+.header-main__title {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: #1E212C;
+}
+.header-main__title:not(:last-child) {
+   margin-bottom: 92px;
+}
+.header-main__image:not(:last-child) {
+   margin-bottom: 92px;
+}
+.header-main__image img {
+   max-width: 100%;
+}
+.body-main__sub-title {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 150%;
+   color: #1E212C;
+}
+.body-main__sub-title:not(:last-child) {
+   margin-bottom: 24px;
+}
+.body-main__text p:not(:last-child){
+   margin-bottom: 24px;
+}
+.body-main__text:not(:last-child) {
+   margin-bottom: 48px;
+}
+.body-main__text {
+   line-height: 160%;
+}
+.body-main__quote {
+   background: url(../img/icons/braces.svg) 0 0 no-repeat;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 150%;
+   padding-left: 58px;
+}
+.body-main__quote:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.body-main__text ul li::before {
+   content: "";
+   background: url(../img/icons/icon1.svg) 0 0 no-repeat;
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 16px;
+}
+.body-main__text ul li:not(:last-child) {
+   margin-bottom: 4px;
+}
+.body-main__text ul:not(:last-child) {
+   margin-bottom: 24px;
+}
+
