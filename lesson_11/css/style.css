@@ -1,0 +1,308 @@
+@import url(https://fonts.googleapis.com/css?family=Gemunu+Libre:200,300,regular,500,600,700,800&display=swap);
+body {
+   font-family: "Gemunu Libre";
+}
+.wrapper {
+   position: relative;
+   min-height: 1600px;
+}
+
+[class*="__container"] {
+   max-width: 1230px;
+   margin: 0 auto;
+}
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 50;
+   background-color: rgb(216, 92, 92);
+}
+.header__menu {
+   text-align: center;
+}
+.menu__item {
+   display: inline-block;
+   position: relative;
+   padding: 20px 30px;
+}
+.menu__link {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+.menu__link:hover {
+   color: rgb(252, 209, 209);
+}
+.page {
+   padding-top: 90px;
+}
+.experiments__container {
+   min-height: 1000px;
+   box-shadow: 2px 2px 10px rgb(73, 72, 72);
+   padding: 20px;
+}
+
+.experiments__relative {
+   padding-top: 80px;
+}
+
+.title {
+   font-size: 40px;
+   text-align: center;
+   font-weight: 700;
+   margin: 20px 0px;
+}
+.relative__title {
+   color: rgb(250, 133, 0);
+   margin-top: 0;
+}
+.relative__box {
+   background-color: rgb(226, 189, 189);
+   max-width: 100%;
+   min-height: 500px;
+}
+.relative__item {
+   position: relative;
+   width: 100px;
+   height: 100px;
+}
+
+.relative__item:nth-child(1) {
+   background-color: green;
+   top: 50px;
+   left: 200px;
+}
+
+.relative__item:nth-child(2) {
+   background-color: red;
+   bottom: 10px;
+   right: -15px;
+}
+.relative__item:nth-child(3) {
+   background-color: coral;
+   top: 100px;
+   right: -300px;
+}
+.relative__item:nth-child(4) {
+   background-color: cornsilk;
+   bottom: 0px;
+   left: 850px;
+}
+
+.experiments__absolute {
+   padding-top: 80px;
+}
+
+.absolute__title {
+   color: rgb(0, 4, 255);
+}
+
+.absolute__box {
+   position: relative;
+   min-height: 300px;
+   max-width: 100%;
+   background-color: rgb(233, 199, 113);
+}
+
+.absolute__item {
+   position: absolute;
+   background-color: aqua;
+   width: 100px;
+   height: 100px;
+}
+
+.absolute__item:nth-child(1) {
+   background-color: rgb(108, 183, 226);
+   top: 50px;
+   left: 20px;
+}
+
+.absolute__item:nth-child(2) {
+   background-color: rgb(0, 0, 0);
+   bottom: 100px;
+   right: 10px;
+}
+.absolute__item:nth-child(3) {
+   background-color: rgb(248, 4, 4);
+   top: 150px;
+   right: 300px;
+}
+.absolute__item:nth-child(4) {
+   background-color: rgb(95, 170, 26);
+   bottom: 150px;
+   left: 350px;
+}
+
+.experiments__sticky {
+   padding-top: 80px;
+}
+
+.sticky__title {
+   color: firebrick;
+}
+.sticky__box {
+   background-color: rgb(136, 243, 243);
+   max-width: 100%;
+   height: 1400px;
+   position: relative;
+   padding-top: 100px;
+}
+.sticky__item {
+   margin: 70px auto;
+   width: 800px;
+   height: 80px;
+   position: sticky;
+   top: 70px;
+}
+
+.sticky__item:nth-child(1) {
+   background-color: brown;
+}
+.sticky__item:nth-child(2) {
+   background-color: darkgreen;
+}
+.sticky__item:nth-child(3) {
+   background-color: rgb(183, 233, 2);
+}
+.sticky__item:nth-child(4) {
+   background-color: rgb(255, 72, 0);
+}
+.sticky__item:nth-child(5) {
+   background-color: rgb(76, 0, 255);
+}
+
+.car {
+   max-width: 1400px;
+   min-height: 800px;
+   margin: 0 auto;
+   background: url(../img/bg.jpg) 0 0 no-repeat;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.car__main {
+   background-color: rgb(0, 255, 255);
+   width: 500px;
+   height: 100px;
+   border-radius: 170px 130px 0px 0px;
+   position: absolute;
+   bottom: 100px;
+   right: 250px;
+}
+.car__main::before {
+   position: absolute;
+   content: "";
+   width: 160px;
+   height: 20px;
+   border-radius: 10px 10px;
+   background-color: rgb(48, 47, 47);
+   bottom: -5px;
+   left: -15px;
+}
+.car__main::after {
+   position: absolute;
+   content: "";
+   width: 160px;
+   height: 20px;
+   border-radius: 0px 10px 10px 0px;
+   background-color: rgb(48, 47, 47);
+   bottom: -6px;
+   right: -15px;
+}
+
+.wheels-car__left {
+   position: absolute;
+   border-radius: 50%;
+   background-color: #000;
+   width: 80px;
+   height: 80px;
+   bottom: 70px;
+   right: 580px;
+}
+.wheels-car__disk {
+   background-color: red;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   position: absolute;
+   top: 26px;
+   left: 28px;
+}
+.wheels-car__right {
+   position: absolute;
+   border-radius: 50%;
+   background-color: #000;
+   width: 80px;
+   height: 80px;
+   bottom: 70px;
+   right: 320px;
+}
+
+.windows-car__first {
+   width: 120px;
+   height: 90px;
+   border-radius: 90px 0 0 0;
+   background-color: aliceblue;
+   border: 15px solid rgb(0, 255, 255);
+   position: absolute;
+   bottom: 200px;
+   right: 490px;
+}
+.windows-car__second {
+   width: 120px;
+   height: 90px;
+   border-radius: 0 90px 0 0;
+   background-color: aliceblue;
+   border: 15px solid rgb(0, 255, 255);
+   position: absolute;
+   bottom: 200px;
+   right: 370px;
+}
+
+.handles-car__first {
+   width: 30px;
+   height: 15px;
+   background-color: rgb(83, 68, 83);
+   border-radius: 7px;
+   position: absolute;
+   bottom: 170px;
+   right: 520px;
+}
+.handles-car__second {
+   width: 30px;
+   height: 15px;
+   background-color: rgb(83, 68, 83);
+   border-radius: 7px;
+   position: absolute;
+   bottom: 170px;
+   right: 390px;
+}
+
+.car__headlight {
+   background-color: darkorange;
+   position: absolute;
+   bottom: 160px;
+   right: 690px;
+   width: 20px;
+   height: 20px;
+   border-radius: 40px 0px 20px 0px;
+}
+
+.button {
+   position: absolute;
+   background-color: chocolate;
+   border-radius: 15px;
+   padding: 15px 35px;
+   color: #fff;
+   font-size: 20px;
+   font-weight: 800;
+   top: 20px;
+   left: 850px;
+}
+.button:hover{
+   background-color: rgb(168, 85, 25);
+}
