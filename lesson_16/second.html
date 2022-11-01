@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Any Questions?</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <a href="" class="header__logo">
+               <img src="img/logo.svg" alt="Logo">
+            </a>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a href="" class="menu__link">About Us</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Courses</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Events</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Blog</a>
+                  </li>
+                  <li class="menu__item">
+                     <a href="" class="menu__link">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="header__actions actions-header">
+               <a href="" class="actions-header__button button"><span>Get consultation</span></a>
+               <a href="" class="actions-header__log"><span>Log in / Register</span></a>
+            </div>
+         </div>
+      </header>
+      <main class="page">
+         <section class="page__questions questions">
+            <div class="questions__container">
+               <div class="questions__block block-questions">
+                  <div class="block-questions__image">
+                     <img src="img/illustration.svg" alt="illustration">
+                  </div>
+                  <div class="block-questions__content content-block">
+                     <div class="content-block__title title-block">
+                        <h3 class="content-block__sub-title">Any questions?</h3>
+                        <h2 class="content-block__title">Drop us a line</h2>
+                     </div>
+                     <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="questions__form form-questions">
+                        <div class="form-questions__item">
+                           <div class="form-questions__line">
+                              <label for="first-name" class="form-questions__label">First Name*</label>
+                              <input id="first-name" required placeholder="Your first name" name="first-name" tabindex="1" type="text" class="form-questions__input">
+                           </div>
+                           <div class="form-questions__line">
+                              <label for="last-name" class="form-questions__label">Last Name*</label>
+                              <input id="last-name" required placeholder="Your last name" name="last-name" tabindex="2" type="text" class="form-questions__input">
+                           </div>
+                        </div>
+                        <div class="form-questions__item">
+                           <div class="form-questions__line">
+                              <label for="email" class="form-questions__label">Email*</label>
+                              <input id="email" required placeholder="Your working email" name="email" tabindex="3" type="email" class="form-questions__input">
+                           </div>
+                           <div class="form-questions__line">
+                              <label for="phone" class="form-questions__label">Phone</label>
+                              <input id="phone" required placeholder="Your phone number" name="phone" tabindex="4" type="tel" class="form-questions__input">
+                           </div>
+                        </div>
+                        <div class="form-questions__block-area">
+                           <div class="form-questions__line">
+                              <label for="message" class="form-questions__label">Message*</label>
+                              <textarea name="message" id="message" placeholder="Your message" tabindex="5" class="form-questions__area"></textarea>
+                           </div>
+                        </div>
+                        <div class="form-questions__row row-questions-form">
+                           <div class="row-questions-form__checkbox">
+                              <input class="row-questions-form__input" type="checkbox" value="agree" name="check" required id="check">
+                              <label for="check" class="row-questions-form__label"><span class="row-questions-form__text">I agree to receive communications from Createx Online School</span></label>
+                           </div>
+                           <button type="submit" name="" tabindex="7" class="row-question-form__button button"><span>Send message</span></button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>

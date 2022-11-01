@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <section class="page__experiments experiments">
+            <a href="./second.html" class="experiments__link">Next file</a>
+            <div class="experiments__container">
+               <form action="#" enctype="multipart/form-data" class="experiments__form form-experiments">
+                  <div class="form-experiments__line">
+                     <label for="name-01" class="form-experiments__label">Your Name</label>
+                     <input required type="text" id="name-01" class="form-experiments__input" name="name" placeholder="Name..." autocomplete="off">
+                  </div>
+                  <div class="form-experiments__line">
+                     <label for="phone-01" class="form-experiments__label">Your Phone</label>
+                     <input required type="tel" id="phone-01" class="form-experiments__input" name="phone" placeholder="Phone..." autocomplete="off">
+                  </div>
+                  <div class="form-experiments__line">
+                     <label for="email-01" class="form-experiments__label">Your Email</label>
+                     <input required type="email" id="email-01" class="form-experiments__input" name="mail" placeholder="Email..." autocomplete="off">
+                  </div>
+                  <div class="form-experiments__line">
+                     <label class="form-experiments__label" for="pass-01">Your Password</label>
+                     <input id="pass-01" class="form-experiments__input" autocomplete="off" placeholder="Your password" name="pass" type="password">
+                  </div>
+                  <div class="form-experiments__line">
+                     <label class="form-experiments__label" for="pass-01">Your Number</label>
+                     <input class="form-experiments__input" autocomplete="off" placeholder="Your number" name="digi" type="number">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" autocomplete="off" name="range" type="range">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" autocomplete="off" name="color" value="#ffffff" type="color">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" autocomplete="off" name="date" type="date">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" autocomplete="off" name="search" placeholder="Search.." type="search">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" name="token" value="gap02" type="hidden">
+                  </div>
+                  <div class="form-experiments__line">
+                     <input id="home-01" class="form-experiments__input form-experiments__input_chk" autocomplete="off" required name="car" type="checkbox">
+                     <label class="form-experiments__label" for="home-01">Did u have car?</label>
+                  </div>
+                  <div class="form-experiments__line">
+                     <h2 class="form-experiments__title">Favorite pet</h2>
+                     <div class="form-experiments__radio">
+                        <input checked id="pet-01" required class="form-experiments__input form-experiments__input_radio" type="radio" name="pet" value="cat" autocomplete="off">
+                        <label class="form-experiments__label" for="pet-01">Cat</label>
+                     </div>
+                     <div class="form-experiments__radio">
+                        <input id="pet-02" required class="form-experiments__input form-experiments__input_radio" name="pet" type="radio" value="dog" autocomplete="off">
+                        <label class="form-experiments__label" for="pet-02">Dog</label>
+                     </div>
+                  </div>
+                  <div class="form-experiments__line">
+                     <input class="form-experiments__input" name="file" accept="image/png, image/jpeg" multiple type="file">
+                  </div>
+                  <div class="form-experiments__line">
+                     <textarea autocomplete="off" name="message" class="form-experiments__area">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus exercitationem soluta explicabo impedit blanditiis illum repudiandae ab delectus alias? Commodi dolorem repellat saepe, tenetur architecto natus praesentium? Necessitatibus, facilis error?</textarea>
+                  </div>
+                  <div class="form-experiments__line">
+                     <select name="form-experiments__list">
+                        <option value="">Point 1</option>
+                        <option value="">Point 2</option>
+                        <option value="">Point 3</option>
+                        <option value="">Point 4</option>
+                        <option value="">Point 5</option>
+                     </select>
+                  </div>
+                  <div class="form-experiments__line">
+                     <button class="form-experiments__button" type="reset">Reset</button>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+</html>
