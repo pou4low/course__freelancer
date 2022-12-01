@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   <meta charset="UTF-8"> 
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <title>Document</title> 
+</head> 
+<body> 
+   <div class="wrapper"> 
+      <header class="header"></header> 
+      <main class="page"> 
+         <div class="first__block"> 
+            <h2 class="title">Урок №1 операторы JavaScript</h2> 
+            <a href="https://www.youtube.com/watch?v=jc5Upe8xIN0">Ссылка</a> 
+            <p>Вариант №1 будет неверным. Потому что унарные операторы нужно писать перед строкой. Например console.log(+"35" - "22");</p> 
+            <p>Вариант №3 будет неверным. Потому что инкремент и декремент можно применить только к переменным</p> 
+            <p>Вариант №4 будет неверным. Потому что нужно записывать префиксный вид инкремента в данной ситуации, из-за того что переменная получает первоначальное значение, еще до выполнения оператора.</p> 
+            <p>Вариант №5 будет неверным. Потому что оператор || вернет первое true, первым true являеться 11</p> 
+         </div> 
+         <div class="second__block"> 
+            <h2 class="title">Урок №2 IF ELSE</h2> 
+            <a href="https://www.youtube.com/watch?v=tFyRhDZgHaU">Ссылка</a> 
+            <p>Вариант №2 вернет истину. Потому что при нестрогом равно строка переведется в число.</p> 
+            <p>Вариант №3 вернет истину. Потому что логический оператор "И" ищет false. Во всех сравнениях выйдет true. '>' переведет строку в число</p> 
+            <p>Вариант №4 вернет истину. Потому что 0 это falsе. А пробел в пустой строке это true</p> 
+         </div> 
+         <div class="third__block"> 
+            <h2 class="title">Урок №3 строки в JavaScript</h2> 
+            <a href="https://www.youtube.com/watch?v=jc5Upe8xIN0&list=PPSV">Ссылка</a> 
+            <p>Задача №1 будет неверной. Потому что такую запись нужно записывать с обратными лапками Привет.</p> 
+            <p>Задача №2. <br> 
+               let text = 'Фрилансер';<br> 
+               let symbol = text[5];<br> 
+               console.log(symbol);</p> 
+            <p>Задача №3 будет неверной. Потому что + не переводит строку в число.</p> 
+            <p>Задача №4. let text = 'фрилансер'; console.log(text.toUpperCase()); 
+            </p> 
+            <p>Задача №5.<br>
+               let text = 'Фрилансер';<br>
+               console.log(text.slice(3,6));
+            </p>
+            <p>Задача №6. Будет false потому что подстрока "лан" начинаеться с 3, а не с 4.</p> 
+         </div>
+         <div class="fourth__block">
+            <h2 class="title">Урок №4. Циклы</h2>
+            <a href="https://www.youtube.com/watch?v=QjDzp-yM_To">Ссылка</a>
+            <p>Задача №1. 
+               let numFirst = 0;<br>
+               while (numFirst < 5) {<br>
+                  console.log (numFirst);<br>
+                  numFirst++ <br>
+               } <br>
+               
+               for (let numSecond = 0; numSecond < 5; numSecond++) { <br>
+                  console.log(numSecond); <br>
+               }
+            </p>
+            <p>Задача №2. Последним числом будет 1. Потому что когда получиться 0, то он вызовет false и цикл не выполнится.</p>
+            <p>Задача №3. <br>
+               let num = 0; <br>
+               while (num < 3) { <br>
+               console.log (`Число: ${num}`); <br>
+               num++; <br>
+               }
+            </p>
+            <p>Задача №4. <br>
+               firstFor: for (let num = 0;  num < 2; num++) { <br>
+                  for (let size = 0; size < 3; size++) { <br>
+                     if (size == 1) { <br>
+                        break firstFor; <br>
+                     } <br>
+                     console.log(size); <br>
+                  } <br>
+               }
+            </p>
+         </div>
+         <div class="fiveth__block">
+            <h2 class="title">Урок №5. Числа</h2>
+            <a href="https://www.youtube.com/watch?v=tiHvPGOX5yc">Ссылка</a>
+            <p>Задача №1. <br>
+               let numOne = 1.005 + Number.EPSILON; <br>
+               let num = Math.round (numOne * 100) / 100; <br>
+               console.log (num);
+            </p>
+            <p>Задача №2. <br>
+               let value = "135.58px"; <br>
+               console.log (parseFloat(value));</p>
+            <p>Задача №3. <br>
+               let value = 58 + "Фрилансер"; <br>
+               if (isNaN(value)) { <br>
+                  console.log ('Результат выражения Nan'); <br>
+               }
+            </p>
+            <p>Задача №4. console.log (Math.max (10, 58, 39, -150, 0));</p>
+            <p>Задача №5. let num = Math.floor(58.858); console.log (num);</p>
+         </div> 
+      </main> 
+      <footer class="footer"></footer> 
+   </div> 
+   <script src="js/script.js"></script> 
+</body> 
+</html>
