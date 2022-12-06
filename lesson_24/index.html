@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson_24</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="first__block">
+            <h2 class="title">Функции в JavaScript</h2>
+            <a href="https://www.youtube.com/watch?v=6cKoB5ijaGA&list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&index=13">Ссылка</a>
+            <p>Задача №1. Первым будет Коля потому что для Васи используется планирование вызова функции.</p>
+            <p>Задача №2. Все верно.</p>
+            <p>Задача №3. Не верно потому что при функциональном виражении итог не видно выше этого выражения.</p>
+            <p>Задача №4. <br>
+               let showMessageThree; <br>
+               if (2 > 1) { <br>
+                  showMessageThree = function () { <br>
+                     console.log('Message 3'); <br>
+                  }; <br> 
+               } <br>
+               showMessageThree();</p>
+         </div>
+         <div class="second__block">
+            <h2 class="title">Массивы в JavaScript</h2>
+            <a href="">Ссылка</a>
+               <p>Задача №1. Число 4 будет в консоли, потому что мы использовали метод push.</p> 
+               <p>Задача №2. let users = ['Ваня', 'Иштван',]; <br> 
+                  users.push('Оля'); <br> 
+                  console.log(users); <br> 
+                  <br> 
+                  users.splice(1,1,'Петя'); <br> 
+                  console.log(users); <br> 
+                  <br> 
+                  let resultOne = users.find (function(item, index, array){ <br> 
+                     return item === 'Оля'; <br> 
+                  }); <br> 
+                  console.log(resultOne); <br> 
+                   
+                  let removed = users.splice(0, 1); <br> 
+                  console.log(removed); <br> 
+                  console.log(users); <br> 
+                   
+                  users.unshift('Маша', 'Паша');<br>  
+                  console.log(users);</p> 
+                  <p>Задача №3. let usersTwo = ['Ваня', 'Иштван',]; 
+                     let removedTwo = usersTwo.splice(1, 1); 
+                     console.log(removedTwo);</p> 
+                  <p>Задача №4. let str = 'Ваня,Иштван,Оля'; 
+                     let arrTwo = str.split(','); 
+                     console.log(arrTwo);</p> 
+                  <p>Задача №5. previousValue равен первому числу в массиве, потому что не задано число самостоятельно, это число 9</p> 
+         </div> 
+         <div class="third__block"> 
+               <h2 class="title">DOM</h2> 
+               <a href="https://www.youtube.com/watch?v=DuWyc76lYC4&list=PPSV">Ссылка</a> 
+               <div class="block">Привет!</div> 
+               <p>Задача №1. <br> 
+                  const block = document.querySelector('.block'); <br> 
+                  block.dataset.sayHi = 'yes'; <br> 
+                  let sayHi = block.dataset.sayHi; <br> 
+                  console.log(sayHi);</p> 
+               <p>Задача №2. <br> 
+                  const liSecond = document.querySelectorAll('li'); <br> 
+                  let liText = liSecond[1]; <br> 
+                  console.log (liText.innerText); 
+               </p> 
+               <ul> 
+                  <li>Корчи</li> 
+                  <li>Йончи</li> 
+               </ul> 
+               <p>Задача №3. <br> 
+                  const likeElem = document.querySelectorAll('.like'); <br> 
+                  console.log(likeElem);  
+               </p> 
+               <div class="like"></div> 
+               <div class="subscribe"></div> 
+               <div class="like subscribe"></div> 
+               <p>Задача №4. текст добавиться перед закрывающим тегом родителя </p> 
+               <ul class="example__four"> 
+                  <li>Пункт 1</li> 
+                  <li>Пункт 2</li> 
+               </ul> 
+         </div> 
+         <div class="fourth__block"> 
+            <h2 class="title">JS размеры, прокрутка, координаты</h2> 
+            <a href="https://www.youtube.com/watch?v=TEeKr2ON66A&list=PPSV">Ссылка</a> 
+            <p>Задача №1. При помощи этого кода мы узнаем ширину всего документа и ширину окна, после чего можно отнять эти значения и мы получим размер полосы прокртуки. <br> 
+               const mainElement = document.documentElement;<br> 
+               const mainElementWidth = mainElement.clientWidth;<br> 
+               const windowWidth = window.innerWidth;<br> 
+               console.log(mainElementWidth);<br> 
+               console.log(windowWidth);<br> 
+            </p> 
+            <p>Задача №2.
+               function setScrollBy() {
+               window.scrollBy(0, 100);
+               const windowScrollTop = window.pageYOffset;
+                console.log(windowScrollTop);
+            }
+            setTimeout(setScrollBy, 1000);</p>
+            <p>Задача №3</p> 
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
